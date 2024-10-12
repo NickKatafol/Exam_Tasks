@@ -3,7 +3,7 @@
     <h3>ABOUT of the Project</h3>
 
     <section>
-      <h4>About of the Editor Card</h4>
+      <h4>Task for the Editor Card</h4>
 
       The inputs of src/components/EditorCard.vue can not showed up because the row data does not go from the
       src/views/TaskView.vue into the EditorCard.vue.

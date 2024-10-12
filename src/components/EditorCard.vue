@@ -1,19 +1,4 @@
 <script setup lang="ts">
-import { ref, reactive, computed, toValue, type PropType, nextTick } from 'vue'
-import type { ITableRow } from '../views/TaskView.vue';
-
-const pr = defineProps({
-  onTabRowHolder: {type: Function, require: true}
-})
-
-const modelValue = defineModel<ITableRow>({required: true})
-
-const localData = ref<ITableRow>({ ...modelValue.value })
-
-function onSave () {
-  modelValue.value = JSON.parse(JSON.stringify(localData.value)) 
-}
-
 </script>
 
 <template>
@@ -23,10 +8,10 @@ function onSave () {
     <div class="cart-wrapper">
       <h3>data EDITOR</h3>
 
-      <div v-for="(val, key, ind) of localData" :key="ind" class="input-group">
+      <div v-for="(val, key, ind) of modelValue" :key="ind" class="input-group">
         <label :for="'label' + ind">{{ key }}</label>
         <input type="text" 
-               v-model="localData[key]" 
+               v-model="modelValue[key]" 
                class="input-item" 
                :id="'label' + ind"
         >
