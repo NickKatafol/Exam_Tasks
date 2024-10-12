@@ -6,8 +6,9 @@ There is:
 3. The branch 'bug_task-1' - bug's task
 
 All the work has to be into the src/components/EditorCard.vue component.
+The task Description is in the ABOUT page.
 
-All the tasks is covered by End-to-End tests
+All the tasks is covered by End-to-End tests.
 
 
 ## Project Setup
