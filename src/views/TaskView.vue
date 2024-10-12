@@ -59,7 +59,7 @@ export interface ITableRow {
         @click="onTabRowHolder"
   >
     <div class="task_menu">
-      <h3>Sensitive data</h3>
+      <h3>Table data</h3>
       <button :data-row-index="-1">
         Add the new row
       </button>

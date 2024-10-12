@@ -28,7 +28,8 @@ function onSave () {
         <input type="text" 
                v-model="localData[key]" 
                class="input-item" 
-              :id="'label' + ind">
+               :id="'label' + ind"
+        >
       </div>
 
       <div>
