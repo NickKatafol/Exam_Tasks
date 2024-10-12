@@ -3,7 +3,21 @@
     <h3>ABOUT of the Project</h3>
 
     <section>
-      <h4>About of the Editor Card</h4>
+      <h4>Bug's behavior</h4>
+      1. The SAVE and OUT buttons is out of its role.
+      <br>The changes in the inputs change the data into the Table immidiatly while tiping.
+
+      <p>
+        2. If we make some changes in the inputs, then click on the SAVE button,
+        then make some changes in the inputs again, and finally click on the OUT button,
+        the second changes still be saved in the table data.
+        <br>It shouldn't be.
+
+      </p>
+    </section>
+
+    <section>
+      <h4>Target behavior</h4>
 
       The inputs of src/components/EditorCard.vue can not showed up because the row data does not go from the
       src/views/TaskView.vue into the EditorCard.vue.
@@ -25,7 +39,7 @@
       </p>
       <p>
         If we make some changes in the inputs, then click on the SAVE button,
-        then make some changes in the inputs agen, and finally click on the OUT button,
+        then make some changes in the inputs again, and finally click on the OUT button,
         the second changes should not be saved in the table data.
       </p>
       <p>

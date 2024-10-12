@@ -8,10 +8,10 @@ const pr = defineProps({
 
 const modelValue = defineModel<ITableRow>({required: true})
 
-const localData = ref<ITableRow>({ ...modelValue.value })
+const localData = ref<ITableRow>(modelValue.value)
 
 function onSave () {
-  modelValue.value = JSON.parse(JSON.stringify(localData.value)) 
+  modelValue.value = localData.value
 }
 
 </script>
