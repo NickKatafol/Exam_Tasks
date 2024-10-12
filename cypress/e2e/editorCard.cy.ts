@@ -35,7 +35,7 @@ describe('The EditorCard checkout', () => {
   it('The click on the SAVE button is saving the data', () => {
     cy.contains('button', 'SAVE').click()
     
-    //check out the chenges in the tab: the 'firstName' became the 'VUE-3'
+    //check out the changes in the tab: the 'firstName' became the 'VUE-3'
     cy.get('table > tbody > tr').first().should('contain', 'VUE-3')
   })
 
@@ -45,7 +45,7 @@ describe('The EditorCard checkout', () => {
     //The EditorCard is disappired
     cy.get('.app-wrapper').should('not.contain', 'data EDITOR')
     
-    //check out the chenges in the tab: the 'firstName' became the 'VUE-3'
+    //check out the changes in the tab: the 'firstName' do NOT became the 'VUE-3'
     cy.get('table > tbody > tr').first().should('not.contain', 'VUE-3')
   })
 
@@ -55,7 +55,7 @@ describe('The EditorCard checkout', () => {
     //The EditorCard is disappired
     cy.get('.app-wrapper').should('not.contain', 'data EDITOR')
     
-    //check out the chenges in the tab: the 'firstName' became the 'VUE-3'
+    //check out the changes in the tab: the 'firstName' do NOT became the 'VUE-3'
     cy.get('table > tbody > tr').first().should('not.contain', 'VUE-3')
   })
 
@@ -63,25 +63,25 @@ describe('The EditorCard checkout', () => {
     cy.contains('button', 'SAVE').click()    
     cy.contains('button', 'OUT').click()
 
-    //check out the chenges in the tab: the 'firstName' became the 'VUE-3'
+    //check out the changes in the tab: the 'firstName' became the 'VUE-3'
     cy.get('table > tbody > tr').first().should('contain', 'VUE-3')
 
     //The EditorCard is disappired
     cy.get('.app-wrapper').should('not.contain', 'data EDITOR')
   })
 
-  it('The second changes without click on the SAVE button is NOT by saved', () => {
+  it('The second changes without click on the SAVE button the second time is NOT be saved', () => {
     //save the first canges
     cy.contains('button', 'SAVE').click()
 
-    //make the swcond chaanges
+    //make the second changes
     cy.get('.cart-wrapper').contains('label', 'firstName').click()
     cy.focused().clear().type('VUE-33')
 
     //out without saving
     cy.contains('button', 'OUT').click()
 
-    //check out the chenges in the tab: the 'firstName' became the 'VUE-3'
+    //check out the changes in the tab: the 'firstName' do NOT became the 'VUE-33'
     cy.get('table > tbody > tr').first().should('not.contain', 'VUE-33')
 
     //The EditorCard is disappired
