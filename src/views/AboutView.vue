@@ -32,10 +32,10 @@
         All the work has to be into the src/components/EditorCard.vue component.
       </p>
     </section>
-    <!-- <section>
+    <section>
       <h4>Target behavior</h4>
-      <video controls src="../assets/Fri Sep 20 2024 8_36_48 PM.webm"></video>
-    </section> -->
+      <video controls src="../assets/data/Table_task.webm"></video>
+    </section>
 
 
   </div>
