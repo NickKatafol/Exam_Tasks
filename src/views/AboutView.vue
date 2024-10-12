@@ -25,7 +25,7 @@
       </p>
       <p>
         If we make some changes in the inputs, then click on the SAVE button,
-        then make some changes in the inputs agen, and finally click on the OUT button,
+        then make some changes in the inputs again, and finally click on the OUT button,
         the second changes should not be saved in the table data.
       </p>
       <p>
